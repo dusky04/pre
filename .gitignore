@@ -9,3 +9,9 @@ wheels/
 # Virtual environments
 .venv
 .ropeproject
+
+.gitignore
+
+# Dataset
+zipped_data
+CricketEC

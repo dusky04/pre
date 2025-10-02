@@ -1,5 +1,5 @@
-from pathlib import Path
 from dataclasses import dataclass
+from pathlib import Path
 
 
 # This class takes in all the necessary arguments necessary to use pytorch

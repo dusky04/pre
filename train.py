@@ -3,11 +3,9 @@ from typing import Any, Optional
 
 import torch
 from torch import nn
-
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 
-from hello import DEVICE
 from pre import Pre
 
 
@@ -18,8 +16,8 @@ def train_model(
     test_dataloader: DataLoader,
     loss_fn: nn.Module,
     optimizer: torch.optim.Optimizer,
+    device: torch.device,
     scheduler: Optional[torch.optim.Optimizer] = None,
-    device: torch.device = DEVICE,
 ):
     Path(p.weights_dir).mkdir(parents=True, exist_ok=True)
 
